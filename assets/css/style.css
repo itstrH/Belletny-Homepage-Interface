@@ -1,0 +1,544 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');    
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Playfair Display', 'Roboto', serif;  
+    color: #000;
+    font-size: 1.6rem;
+    background: #F3F3F3;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+:root{
+    --color-bg: #9E2548;
+    --color-text: #F3F3F3;
+}
+/* CSS */
+/* HEADER */
+    /* HEADER CONTACT */
+.header{
+    position: sticky;
+    top: -8.5rem;
+    z-index: 1;
+}
+.header__contact{
+    background: var(--color-bg);
+}
+.header__contact .container{
+    display: flex;
+    justify-content: space-between;
+}
+.phone{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+.phone p{display: inline-block; margin: auto; font-size: 1.6rem;}
+.logo{
+    width: 18%;
+}
+.header__action {
+    display: flex;
+    justify-content: right;
+    width: 25%;
+    margin: 0;
+}
+.header__action li{
+    text-align: center;
+    padding: 2rem;
+}
+.header__action li:hover{
+    background: #000;
+}
+.header__action li img{
+    width: 3.5rem;
+}
+    /* NAV */
+.header__nav{
+    background: #FFF;
+}
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2.5rem 0;
+}
+.nav li a{
+    color: #000;
+    font-weight: 600;
+}
+.nav li a:hover{
+    color: var(--color-bg);
+}
+
+/* CATEGORIES */
+/* SECTION HEADER */
+.categories{padding-bottom: 2rem;}
+.section__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0;
+}
+.section__header h1{
+    font-size: 5rem; 
+    margin: 0; 
+    padding-bottom: 1.6rem;
+}
+/* END */
+.cat__products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+}
+.cat__item{
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cat__item img{
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 90%;
+}
+.cat__item:hover{
+    cursor: pointer;
+}
+.cat__item:hover img{
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.cat__item p{
+    color: #000;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+.cat__banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cat__banner__item{
+    width: 49.5%;
+    position: relative;
+}
+.cat__banner__item:hover{
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.cat__banner__item img{
+    width: 100%;
+}
+.banner__item__action{
+    max-width: 49.5%;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+.banner__item__action p{
+    font-family: Roboto;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 0;
+}
+.banner__item__action h3{
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+.banner__btn{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: inline-block;
+    color: #FFF;
+    padding: 0.8rem 1.6rem;
+    background: var(--color-bg);
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.banner__btn:hover{
+    background: #000;
+    color: var(--color-text);
+}
+/* TRENDING */
+.trending{
+    padding-bottom: 10rem;
+}
+.td__products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+.td__item {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.td__item:hover{
+    cursor: pointer;
+}
+.td__item:hover img{
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.td__star{
+    color: gray; 
+    font-size: 1.6rem; 
+    padding: 1rem 0;
+}
+.td__item img{
+    width: 100%;
+}
+
+/* BANNER */
+.main__banner{
+    background: no-repeat url(../img/main-banner-02.svg);
+    width: 100%;
+    padding: 7rem 0;
+}
+.main__banner img{
+    width: 100%;
+}
+.main__banner__action{
+    width: 50%;
+    padding: 15rem 5rem;
+}
+.main__banner__action p{
+    font-family: Roboto;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 0;
+}
+.main__banner__action h3{
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+/* SERVICE */
+.main__service{
+    padding: 7rem 0;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #9D9D9D;
+    padding-bottom: 7rem;
+}
+.service__item{
+    text-align: center;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service__item h3{
+    font-size: 2.2rem;
+}
+.service__item p{
+    font-family: 'Roboto';
+    color: #6B6B6B;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.service__item img{
+    width: 15%;
+}
+
+/* FEEDBACK */
+.feedback{
+    padding-bottom: 2rem;
+}
+.feedback .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feedback__img{
+    width: 49.5%;
+}
+.feedback__img img{
+    width: 100%;
+}
+.feedback__img img:hover{
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.feedback__content{
+    width: 49.5%;
+}
+.feedback__content .section__header{
+    display: block;
+    padding: 0 0 0.5rem;
+}
+.feedback__content .section__header img{
+    display: inline-block;
+}
+.frame{
+    position: relative; z-index: -1;
+}
+.frame img{
+    width: 10%;
+}
+.feedback__text p{
+    font-family: 'Roboto';
+    color: #6B6B6B;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: -2.7rem 0 0;
+}
+
+.feedback__footer{
+    display: flex;
+    flex-direction: column;
+}
+.feedback__footer p, .feedback__footer h3{
+    margin: 0;
+}
+.feedback__footer h3{
+    font-size: 1.6rem;
+    color: var(--color-bg);
+    font-weight: 400;
+    padding: 1rem 0 0.5rem;
+}
+.feedback__footer p{
+    font-size: 1.4rem;
+    font-family: 'Roboto';
+}
+.feedback__footer__action a{
+    padding: 0.5rem;
+    height: 1rem;
+}
+.feedback__footer__action i{
+    color: #D9D9D9;
+    font-size: 1rem;
+}
+.feedback__footer__action .active{
+    color: var(--color-bg);
+}
+
+/* BLOG */
+.blog{
+    padding-bottom: 7rem;
+}
+.blog__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog__item{
+    width: 32%;
+    border: 2px solid #9D9D9D;
+}
+.blog__item:hover{
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.blog__item__img img{
+    width: 100%;
+}
+.bi__content{
+    width: 100%;
+    padding: 3%;
+}
+.bi__info p{
+    display: inline-block;
+    padding-right: 2rem;
+    font-family: 'Roboto';
+    color: var(--color-bg);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.bi__info p i{
+    margin-right: 1rem;
+}
+.bi__text{
+    text-align: justify;
+    padding: 0 0 4rem;
+}
+.bi__text h3{
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 1rem;
+}
+.bi__text p{
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* BRAND */
+.brand{
+    padding-bottom: 7rem;
+}
+.brand__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.brand__item{
+    width: 14%;
+}
+.brand__item img{
+    width: 100%;
+}
+
+/* FOOTER */
+.footer{
+    color: #FFF;
+}
+.footer__summary{
+    background: var(--color-bg);
+    padding-top: 5rem;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 2rem;
+}
+.footer__summary .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__copyright{
+    background: var(--color-bg);
+    padding: 1.4rem 0;
+}
+.footer__copyright p{
+    color: #EDEDED;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+.copyright__line{
+    max-width: 50%;
+}
+    /* FOOTER LEFT */
+.footer__left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.footer__logo{
+    padding: 0 0 3rem;
+}
+.footer__logo img{
+    width: 80%;
+    margin-top: -2.5rem;
+}
+.footer__left__content p{
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 2rem;
+}
+.footer__left__content p i{
+    padding-right: 1rem;
+}
+    /* FOOTER NAV */
+.footer__navbar{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.footer__section__title{
+    margin-bottom: 3rem;
+}
+.footer__section__title h3{
+    font-size: 2.3rem;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 0.5rem;
+}
+.footer__nav{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__nav li{
+    padding: 1rem 0;
+}
+.footer__nav li a{
+    padding: 1rem 0;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.footer__nav li a:hover{
+    color: #000;
+}
+    /* FOOTER RIGHT*/
+.footer__right{
+    width: 30%;
+}
+.footer__right__content{
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.footer__right__content form{
+    margin-bottom: 2rem;
+}
+.footer__right__content input{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4.5rem;
+}
+.footer__right__content p{
+    padding: 1rem 0 2rem;
+    margin: 0;
+}
+.input__field{
+    position: relative;
+}
+.input__field .fa-paper-plane{
+    position: absolute;
+    font-size: 2.4rem;
+    padding: 1rem;
+    right: 0;
+    color: var(--color-bg);
+}
+.input__field .fa-paper-plane:hover{
+    color: #000;
+}
+.fr__nav{
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}  
+.fr__nav a{
+    color: #FFF;
+    font-size: 1.8rem;
+}  
+.fr__nav a:hover{
+    color: #000;
+}

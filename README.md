@@ -1,1 +1,1 @@
-Check "Actions" to se the result. 
+Check "Actions" to see the result. 
